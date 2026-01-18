@@ -26,9 +26,9 @@ header("Expires: " . gmdate("D, d M Y H:i:s", time() + $cacheMinutes) . " GMT");
 header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 header("Cache-Control: public, max-age=$cacheMinutes");
 
-// redirect to demo site if user is not given
+// redirect to project page if user is not given
 if (!isset($_REQUEST["user"])) {
-    header("Location: demo/");
+    header("Location: https://github.com/mivodev/mivodev");
     exit();
 }
 
